@@ -1,16 +1,14 @@
 export const BrandLogoLeft = () => {
   return (
-    <a href="/" aria-label="Home" className="ml-2 flex items-center">
-      {/* TEMPLATE: Replace /logo.svg with your brand logo */}
+    <a href="/" aria-label="Mind Spirit Body Home" className="ml-2 flex items-center gap-3">
       <img 
-        src="/logo.svg" 
-        alt="Logo"
-        className="h-8 w-auto object-contain" 
-        onError={(e) => {
-          e.currentTarget.style.display = 'none';
-          e.currentTarget.parentElement!.innerHTML = '<span class="text-xl font-bold text-black">YourBrand</span>';
-        }}
+        src="/logo.jpg" 
+        alt="Mind Spirit Body Logo"
+        className="h-10 w-10 object-contain" 
       />
+      <span className="text-xl font-semibold text-foreground tracking-tight hidden sm:inline">
+        Mind Spirit Body
+      </span>
     </a>
   )
 }

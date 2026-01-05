@@ -1,5 +1,6 @@
 import { HeadlessIndex } from '@/components/headless/HeadlessIndex';
 import { IndexUI } from '@/pages/ui/IndexUI';
+import { OrganizationStructuredData } from '@/components/StructuredData';
 
 /**
  * ROUTE COMPONENT - Index
@@ -10,9 +11,12 @@ import { IndexUI } from '@/pages/ui/IndexUI';
 
 const Index = () => {
   return (
-    <HeadlessIndex>
-      {(logic) => <IndexUI logic={logic} />}
-    </HeadlessIndex>
+    <>
+      <OrganizationStructuredData />
+      <HeadlessIndex>
+        {(logic) => <IndexUI logic={logic} />}
+      </HeadlessIndex>
+    </>
   );
 };
 

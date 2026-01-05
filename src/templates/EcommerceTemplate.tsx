@@ -119,8 +119,8 @@ export const EcommerceTemplate = ({
           {/* Brand */}
           <div>
             <BrandLogoLeft />
-            <p className="mt-4 text-white/70">
-              Your trusted online store
+            <p className="mt-4 text-white/70 max-w-xs">
+              Premium wellness clothing for mindful living. Supporting your journey of balance and harmony.
             </p>
           </div>
 
@@ -151,7 +151,7 @@ export const EcommerceTemplate = ({
         </div>
 
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-white/70">
-          <p>&copy; 2025 Your Store. All rights reserved.</p>
+          <p>&copy; 2025 Mind Spirit Body. All rights reserved.</p>
         </div>
       </div>
     </div>
